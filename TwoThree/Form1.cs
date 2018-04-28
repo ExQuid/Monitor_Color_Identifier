@@ -16,14 +16,6 @@ namespace TwoThree
         {
             InitializeComponent();
         }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-
-
-        }
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
             Bitmap bitmap = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
@@ -42,19 +34,15 @@ namespace TwoThree
                     {
                         Cursor.Position = new Point(x, y);
                         Console.WriteLine(Cursor.Position);
-                        Thread.Sleep(100);
                         Found();
                     }
 
                 }
             }
         }
-
-
-
         private void Found()
         {
-            Console.WriteLine("You did it!");
+            Console.WriteLine("<-------------------->");
         }
 
     }
